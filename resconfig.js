@@ -39,7 +39,7 @@ const config = {
     mulai 		: '1',
     },
     author          : `Date: ${moment.tz('Asia/Jakarta').format('DD/MM/YY')}\nBy: Vanzz Official\nBot: 48459070749`,
-    allmenu         : 'https://autoresbot.com/tmp_files/146a75a8-37bc-401a-be97-b2e7f2ddf25a.jpg',
+    allmenu         : 'https://autoresbot.com/tmp_files/1dff1a27-946b-4cf5-ad00-0ce55bb4abfb.jpg',
     typeWelcome 	: '2', // ada 3 pilihan angka 1 = image pp user  2 = image welcome custom   || 3 = teks only
     icon_on			: '🟢', 
 	icon_off		: '🔴',
