@@ -13,8 +13,8 @@ const config = {
     botDestination  : 'both', // group |  private | both
     region       	: 'indonesia',
     resbot_version  : 'vanzzbotz v3.5.3',
-    apikey_resbot   : 'APIKEY', // apikey beli di autoresbot.com
-    nomorsuperOwner : '62881026977017',
+    apikey_resbot   : 'brziko', // apikey beli di autoresbot.com
+    nomorsuperOwner : '6282192228740',
     grup            : 'https://whatsapp.com/channel/0029VajkIYEGZNCkd80j7w22',
     email           : 'Undefined',
     ig           	: '@fhhriievann_',
