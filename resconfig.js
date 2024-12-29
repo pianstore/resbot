@@ -12,14 +12,14 @@ const path=require("path"),fs=require("fs"),chalk=require("chalk"),moment=requir
 const config = {
     botDestination  : 'both', // group |  private | both
     region       	: 'indonesia',
-    resbot_version  : 'vanzzbotz v3.5.3',
+    resbot_version  : 'pian v3.5.3',
     apikey_resbot   : 'brziko', // apikey beli di autoresbot.com
     nomorsuperOwner : '6282192228740',
-    grup            : 'https://whatsapp.com/channel/0029VajkIYEGZNCkd80j7w22',
-    email           : 'Undefined',
-    ig           	: '@fhhriievann_',
+    grup            : 'https://whatsapp.com/channel/0029VajkIYEGZNCkd07w22',
+    email           : '1on2345p@gmail.com',
+    ig           	: '@pian_',
     ownername       : 'FahriHosting',
-    botname         : 'vanzzbotz',
+    botname         : 'pian',
     packname        : 'FahriHosting',
     sleep_game      : 60000, // waktu main tebak (1000 = 1 detik)
     limit_tunggu 	: 10, // ini menit = 10 menit setiap setelah claim
