@@ -6289,9 +6289,9 @@ case 'memberssh': {
 }
 
       case 'memberxray': {
-		if (resbot_.superOwner || resbot_.isOwner || resbot_.isPremium)  return reply(mess.owner);
+		if (!resbot_.isOwner) return reply(mess.owner);
         await autoresbot.sendMessage(from, { react: { text: "🫡", key: m.key } })
-
+	      
         m.reply(`Plz Wait ${pushname} Show All Member Xray... ⚙️`)
         let cp = require('child_process')
         let { promisify } = require('util')
