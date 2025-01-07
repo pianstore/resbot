@@ -18,16 +18,16 @@ const config = {
     grup            : 'https://whatsapp.com/channel/0029VajkIYEGZNCkd07w22',
     email           : '1on2345p@gmail.com',
     ig           	: '@pian_',
-    ownername       : 'FahriHosting',
+    ownername       : 'pian',
     botname         : 'pian',
-    packname        : 'FahriHosting',
+    packname        : 'pian',
     sleep_game      : 60000, // waktu main tebak (1000 = 1 detik)
-    limit_tunggu 	: 10, // ini menit = 10 menit setiap setelah claim
+    limit_tunggu 	: 1, // ini menit = 10 menit setiap setelah claim
     MoneyMenangGame : 20,
-    ratelimiter 	: 5, // detik
+    ratelimiter 	: 1, // detik
     prefix_custom   : ['#','!','.'],
-    dalamdetik		: 5, // ini adalah waktu couldown dalamdetik
-    chatmasuk 		: 5, // ini adalah jumlah chat maxsimum {dalamdetik}
+    dalamdetik		: 1, // ini adalah waktu couldown dalamdetik
+    chatmasuk 		: 1, // ini adalah jumlah chat maxsimum {dalamdetik}
     prefix 			: true,
     anticall        : false, // true = aktif || false = tidak aktif
     publik 			: true,
@@ -65,7 +65,7 @@ const config = {
         access          : 'owner' , // owner, premium,
     },
     BACKUP          : {
-        autobackup : false, // true atau false
+        autobackup : true, // true atau false
         autosendwa : true
     }
 };
