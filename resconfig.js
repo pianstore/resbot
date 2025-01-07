@@ -14,7 +14,7 @@ const config = {
     region       	: 'indonesia',
     resbot_version  : 'pian v3.5.3',
     apikey_resbot   : 'brziko', // apikey beli di autoresbot.com
-    nomorsuperOwner : '6282192228740',
+    nomorsuperOwner : '6287793583445',
     grup            : 'https://whatsapp.com/channel/0029VajkIYEGZNCkd07w22',
     email           : '1on2345p@gmail.com',
     ig           	: '@pian_',
