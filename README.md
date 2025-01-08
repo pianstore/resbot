@@ -7,5 +7,4 @@
 
 <font color="green"><b>LINK BACA KOMIK</b></font>
 
-<a href="https://komiku.id/">link komik</a>
 
