@@ -4243,52 +4243,7 @@ break
 
 
 /* ________________「 SPOTIFY 」________________ */
-case 'spotify': {
-    const chatMessage = global.smg_chat[sender]?.chat;
-    if (!chatMessage) return reply(`_Contoh: *${prefix + command} terbang bersamaku*_`);
-    if (MinLimit(m.sender) === undefined) return;
-
-
-    let url_default;
-    try {
-    await autoresbot.sendMessage(from, { react: { text: "⏰", key: m.key } });
-        const resSpotify = await fetchJson(`${global.apikey}/api/search/spotify?text=${chatMessage}&apikey=${config.apikey_resbot}`);
-        if (!resSpotify.data || resSpotify.data.length === 0) return reply(`Tidak dapat menemukan lagu di Spotify.`);
-        url_default = resSpotify.data[0].preview;
-        
-        const dSpotify = await fetchJson(`${global.apikey}/api/downloader/spotify?url=${resSpotify.data[0].url}&apikey=${config.apikey_resbot}`);
-
-const stringList = `
-Title   : ${dSpotify.data && dSpotify.data.song ? dSpotify.data.song : 'Unknown'}
-Artist  : ${dSpotify.data && dSpotify.data.artist ? dSpotify.data.artist : 'Unknown'}
-Album   : ${dSpotify.data && dSpotify.data.album_name ? dSpotify.data.album_name : 'Unknown'}
-Release : ${dSpotify.data && dSpotify.data.release_date ? dSpotify.data.release_date : 'Unknown'}
-`;
-const urldownload_spotify = `${dSpotify.data.url}`
-const formattedStringList = '```' + stringList + '```';
-await autoresbot.sendMessage(m.chat, {
-    audio: { url : urldownload_spotify},
-    mimetype: 'audio/mp4',
-    contextInfo: {
-        externalAdReply: {
-            showAdAttribution: true,
-            title: dSpotify.data && dSpotify.data.song ? dSpotify.data.song : 'Unknown',
-            body: stringList,
-            thumbnailUrl: dSpotify.data.cover_url,
-            sourceUrl: dSpotify.data.cover_url,
-            mediaType: 1,
-            renderLargerThumbnail: true
-        }
-    }
-}, { quoted:m });
-    } catch (error) {
-        await autoresbot.sendMessage(m.chat, { audio: {url : url_default}, mimetype: 'audio/mp4'})
-
-        //await autoresbot.sendMessage(from, { react: { text: "⛔", key: m.key } });
-    }
-}
-    break;
-
+		
 /* ________________「 LIRIK 」________________ */
 case 'lirik': {
     const chatMessage = global.smg_chat[sender]?.chat;
@@ -4590,7 +4545,8 @@ break;
 
 
 /* ________________「 PLAY 」________________ */
-case 'play': {
+case 'play':
+case 'spotify':{
     const chatMessage = global.smg_chat[sender]?.chat;
     if (!chatMessage) {
         return reply(`_Gunakan perintah dengan format_ *.play kangen band - terbang bersamaku*`);
