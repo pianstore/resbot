@@ -65,7 +65,7 @@ const config = {
         access          : 'owner' , // owner, premium,
     },
     BACKUP          : {
-        autobackup : false, // true atau false
+        autobackup : true, // true atau false
         autosendwa : true
     }
 };
