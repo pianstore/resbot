@@ -13,7 +13,7 @@ const config = {
     botDestination  : 'both', // group |  private | both
     region       	: 'indonesia',
     resbot_version  : 'pian v3.5.3',
-    apikey_resbot   : 'brziko', // apikey beli di autoresbot.com
+    apikey_resbot   : '5786a9c6000c70229b742c67', // apikey beli di autoresbot.com
     nomorsuperOwner : '6287793583445',
     grup            : 'https://whatsapp.com/channel/0029VajkIYEGZNCkd07w22',
     email           : '1on2345p@gmail.com',
