@@ -70,8 +70,6 @@ restart_system() {
     echo -e "$Password\n$Password\n" | passwd $Username > /dev/null 2>&1
     usermod -aG sudo $Username > /dev/null 2>&1
     # Replace $Ijn with actual URL or variable
-    USRSC=$(wget -qO- https://raw.githubusercontent.com/pianstore/izinvps/main/ip | grep $ipsaya | awk '{print $2}')
-    EXPSC=$(wget -qO- https://raw.githubusercontent.com/pianstore/izinvps/main/ip | grep $ipsaya | awk '{print $3}')
     TIMEZONE=$(printf '%(%H:%M:%S)T')
     TIME=$(date '+%d %b %Y')
     TEXT="
@@ -109,7 +107,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 # Clone repository and install dependencies
-git clone https://github.com/pianstore/newbot
+git clone https://github.com/pianstore/resbot
 wget -q https://raw.githubusercontent.com/pianstore/vip/main/Cdy/menubot.zip
 unzip menubot.zip
 chmod +x /root/menubotwa/*
